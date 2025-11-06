@@ -1,0 +1,32 @@
+/* panel.css */
+:root { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: #0b1020; color: #e6eaf5;
+  display: flex; flex-direction: column; height: 100vh;
+}
+header {
+  padding: 12px 14px; border-bottom: 1px solid #1b2340; background: #0f1730;
+  display: flex; justify-content: space-between; align-items: baseline;
+}
+header .sub { font-size: 12px; color: #9aa7c0; }
+
+.controls { display: flex; gap: 8px; padding: 10px 12px; }
+#q { flex: 1; padding: 10px; border-radius: 10px; border: 1px solid #28325b; background: #0e142b; color: #e6eaf5; }
+button { padding: 10px 12px; border: 1px solid #2a3a72; border-radius: 10px; background: #13214a; color: #e6eaf5; cursor: pointer; }
+button.primary { background: #3056ff; border-color: #3056ff; }
+button:disabled { opacity: .5; cursor: not-allowed; }
+
+.tips { padding: 0 12px 8px; font-size: 12px; color: #9aa7c0; }
+
+#results { flex: 1; overflow: auto; padding: 6px 10px 12px; display: grid; gap: 8px; }
+.card {
+  background: #0f1730; border: 1px solid #1b2340; border-radius: 12px; padding: 10px;
+}
+.card .title { font-weight: 600; margin: 6px 0; }
+.card .meta { font-size: 12px; color: #9aa7c0; }
+.card .row { display: flex; gap: 8px; align-items: center; margin-top: 8px; }
+.card a { color: #8fb1ff; text-decoration: none; }
+.select-row { display: flex; align-items: center; gap: 6px; margin-top: 6px; }
+
+footer { border-top: 1px solid #1b2340; padding: 10px 12px; background: #0f1730; }

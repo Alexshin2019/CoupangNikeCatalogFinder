@@ -1,0 +1,32 @@
+<!-- panel.html -->
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <title>Coupang Catalog Finder</title>
+  <link rel="stylesheet" href="panel.css" />
+</head>
+<body>
+  <header>
+    <strong>Catalog Finder</strong>
+    <span class="sub">쿠팡 카탈로그 매칭</span>
+  </header>
+
+  <div class="controls">
+    <input id="q" type="text" placeholder="예: Nike Air Force 1 Low '07" />
+    <button id="searchBtn">검색</button>
+  </div>
+
+  <div class="tips">
+    <span>단축키: <b>Alt + M</b> 으로 열기</span>
+  </div>
+
+  <section id="results"></section>
+
+  <footer>
+    <button id="applyBtn" class="primary" disabled>선택 항목으로 등록폼 채우기</button>
+  </footer>
+
+  <script src="panel.js"></script>
+</body>
+</html>
